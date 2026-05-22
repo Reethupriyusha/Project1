@@ -3,36 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Submission</title>
+    <title>Welcome to Web Development</title>
     <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background layout with a smooth gradient */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            padding: 20px;
         }
-        .container {
+
+        /* Modern card container styling */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px 30px;
+            border-radius: 20px;
             text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
         }
+
+        /* Heading styles */
         h1 {
-            color: #333;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #ff007f, #ffaa00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
+        /* Subtitle / Paragraph text */
         p {
-            color: #666;
+            font-size: 1.1rem;
+            color: #dddddd;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Interactive pulse badge */
+        .status-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #00ffcc;
+            color: #0f2027;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Project Deployed Successfully</h1>
-        <p>My simple HTML page is officially live on GitHub Pages.</p>
+
+    <div class="card">
+        <h1>Welcome to Web Development</h1>
+        <p>My brand new custom project is fully combined and deployed live on GitHub Pages.</p>
+        <div class="status-badge">Project Deployed Live</div>
     </div>
+
 </body>
 </html>
